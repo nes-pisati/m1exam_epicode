@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <main>
     <nav class="navbar">
         <div class="logo-container">
         <img src="./img/medium-logo.png" alt="logo Medium">
         </div>
         <div class="profile-wrapper">
-            <div class="icon-wrapper"></div>
-            <div class="search-bar"></div>
+            <div class="icon-wrapper">
+                <ion-icon class="icon" name="search-outline"></ion-icon>
+                <ion-icon class="icon" name="bookmark-outline"></ion-icon>
+                <ion-icon class="icon" name="notifications-outline"></ion-icon>
+            </div>
+            <div class="search-bar">
+                <a href="#">Resume membership</a>
+            </div>
             <div class="profile">
                 <a href="#">N</a>
             </div>
         </div>
     </nav>
-    <main>
+    <div class="main-section">
+        <div class="main-title">
+            <a href="#" class="following">FOLLOWING</a>
+            <a href="#" class="recommended">RECOMMENDED FOR YOU</a>
+            <hr>
+        </div>
         <div class="article-wrapper">
             <div class="article"></div>
             <div class="article"></div>
@@ -28,6 +40,7 @@
             <div class="article"></div>
             <div class="article"></div>
         </div>
+    </div>
         <div class="sidebar">
             <div class="social-share"></div>
             <div class="topics"></div>
@@ -35,5 +48,7 @@
             <div class="saved"></div>
         </div>
     </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

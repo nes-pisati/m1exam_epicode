@@ -1,3 +1,9 @@
+:root {
+    --darkgrey: #292929;
+    --mediumgrey: #757575;
+    --lightgrey: #F2F2F2;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,54 +12,74 @@ body {
 
 .navbar {
     width: 100%;
-    height: 90px;
-    background-color: lightgrey;
+    height: 70px;
     display: flex;
+    background-color: white;
     justify-content: space-between;
     position: fixed;
-   /* box-shadow: 0px 5px 10px lightgray;*/
+    box-shadow: 0px 5px 10px var(--lightgrey);
+}
+
+.icon {
+    height: 100%;
 }
 
 .logo-container {
-    height: 90px;
+    height: 70px;
     width: 230px;
-    margin-left: 130px;
-    /*background-color: aqua;*/
+    margin-left: 105px;
     position: relative;
 }
 
 .logo-container img {
-    height: 70px;
+    height: 49px;
     width: auto;
     margin-left: 0px;
     position: absolute;
-    top: 10%;
+    top: 15%;
 }
 
 .profile-wrapper {
-    height: 90px;
+    height: 70px;
     width: fit-content;
-    margin-right: 150px;
-    /*background-color: aqua;*/
+    margin-right: 120px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .icon-wrapper {
-    height: auto;
-    width: 150px;
-    background-color: darkgoldenrod;
+    height: 35px;
+    width: 95px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+    font-size: 1.3em;
+    opacity: 50%;
 }
 
 .search-bar {
     height: auto;
-    width: 225px;
-    background-color:darksalmon;
+    width: 190px;
+    border-radius: 30px;
+    height: 45%;
+    border: 1px solid var(--mediumgrey);
+    margin-right: 20px;
+    position: relative;
+}
+
+.search-bar a {
+    text-decoration: none;
+    color: var(--darkgrey);
+    position: relative;
+    top: 20%;
+    left: 10%;
 }
 
 .profile {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     background-color: mediumseagreen;
     align-self: center;
     border-radius: 50px;
@@ -64,20 +90,48 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
-    top: 25%;
-    left: 31%;
+    top: 20%;
+    left: 28%;
 }
 
 main {
     display: flex;
 }
 
-.article-wrapper {
-    background-color: yellow;
+.main-section {
     height: 100vh;
-    width: 65%
+    width: 65%;
+    margin-top: 70px
+}
+
+.main-title {
+    margin-top: 70px;
+    margin-left: 110px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.main-title a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.following {
+    color: var(--mediumgrey);
+    font-weight: bold;
+    padding-bottom: 8px;
+    margin-right: 15px;
+}
+
+.recommended {
+    color: var(--darkgrey);
+    font-weight: bolder;
+    border-bottom: 2px solid var(--darkgrey);
+    padding-bottom: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .sidebar {
