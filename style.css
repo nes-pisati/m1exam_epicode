@@ -102,7 +102,7 @@ main {
 }
 
 .main-section {
-    width: 65%;
+    width: 70%;
     margin-top: 70px
 }
 
@@ -144,7 +144,7 @@ main {
 .article {
     height: 200px;
     margin-left: 110px;
-    margin-right: 100px;
+    margin-right: 90px;
     margin-top: 50px;
     display: flex;
     justify-content: flex-end;
@@ -247,18 +247,18 @@ main {
 }
 
 .sidebar {
-    width: 35%;
+    width: 28%;
     border-left: 1.7px solid var(--lightgrey);
     display: flex;
     flex-direction: column;
     margin-top: 70px;
+    padding-left: 60px;
+    padding-right: 100px;
 }
 
 .twitter-connect {
     height: 250px;
     margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 110px;
     border-bottom: 1.7px solid var(--lightgrey);
     display: flex;
     flex-direction: column;
@@ -304,7 +304,6 @@ main {
 .twitter-button img {
     height: 20px;
     width: auto;
-
 }
 
 .twitter-button p {
@@ -318,13 +317,11 @@ main {
 
 .topics-wrapper {
     margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: var(--darkgrey);
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .topics-wrapper h3 {
@@ -346,7 +343,7 @@ main {
     border-radius: 30px;
     padding: 12px 15px;
     min-width: 40px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 15px;
     display: flex;
     justify-content: center;
@@ -356,12 +353,11 @@ main {
 .topic-item a {
     text-decoration: none;
     color: var(--darkgrey);
+    font-size: 12pt;
 }
 
 .follow-suggestion {
     margin-top: 60px;
-    margin-left: 60px;
-    margin-right: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -373,4 +369,56 @@ main {
     font-weight: 600;
     margin: 0 0 5px 0;
     font-size: 13pt;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.user img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-left: 20px;
+}
+
+.user-info h3 {
+    margin: 0;
+    color: var(--darkgrey);
+    font-weight: 700;
+}
+
+.user-info p {
+    margin: 0;
+    margin-top: 5px;
+    color: var(--mediumgrey);
+    font-size: 11pt;
+}
+
+.user-button {
+    height: 30px;
+    display: inline-block;
+    width: auto;
+    border-radius: 30px;
+    font-size: 12pt;
+    margin-left: auto;
+    color: var(--darkgrey);
+    border: 1.2px solid var(--darkgrey);
+    display: flex;
+    align-items: center;
+}
+
+.user-button a {
+    text-decoration: none;
+    padding: 15px;
+    color: var(--darkgrey);
+    font-weight: 400;
 }
