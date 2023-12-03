@@ -57,12 +57,11 @@ body {
     margin-right: 20px;
     align-items: center;
     font-size: 1.3em;
-    opacity: 50%;
 }
 
 .search-bar {
     height: auto;
-    width: 190px;
+    width: 170px;
     border-radius: 30px;
     height: 45%;
     border: 1px solid var(--mediumgrey);
@@ -74,8 +73,9 @@ body {
     text-decoration: none;
     color: var(--darkgrey);
     position: relative;
-    top: 20%;
-    left: 10%;
+    top: 15%;
+    left: 8%;
+    font-size: 11pt;
 }
 
 .profile {
@@ -93,7 +93,7 @@ body {
     font-weight: 300;
     font-size: 20px;
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 28%;
 }
 
@@ -127,6 +127,13 @@ main {
     padding-bottom: 8px;
     margin-right: 15px;
     margin-left: 5px;
+}
+
+.following:hover {
+    color: var(--darkgrey);
+    font-weight: bolder;
+    border-bottom: 2px solid var(--darkgrey);
+    padding-bottom: 10px;
 }
 
 .recommended {
@@ -196,6 +203,24 @@ main {
     font-size: small;
 }
 
+.autore-person {
+    display: flex;
+    align-items: center;
+}
+
+.autore-person img {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.autore-person p {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: small;
+}
+
 .autore span {
     color: var(--darkgrey);
 }
@@ -232,7 +257,6 @@ main {
 
 .bottom-icon {
     font-size: 1.3em;
-    opacity: 50%;
     position: absolute;
     left: 90%;
     top: 4%;
@@ -259,6 +283,7 @@ main {
 
 .twitter-loghi-container {
     display: flex;
+    align-items: center;
 }
 
 .twitter-loghi-container img {
@@ -267,6 +292,12 @@ main {
     object-fit: contain;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.twitter-logo img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
 }
 
 .twitter-loghi-container p {
@@ -283,7 +314,7 @@ main {
 }
 
 .twitter-button {
-    width: 60%;
+    width: 55%;
     height: 50px;
     margin-bottom: 25px;
     border-radius: 40px;
@@ -298,9 +329,10 @@ main {
     width: auto;
 }
 
-.twitter-button p {
+.twitter-button a {
     margin-left: 15px;
     color: var(--darkgrey);
+    text-decoration: none;
 }
 
 .twitter-connect a {
@@ -366,7 +398,7 @@ main {
 .user {
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 400px;
     height: 80px;
     margin-top: 10px;
 }
@@ -393,7 +425,7 @@ main {
     margin-top: 5px;
     color: var(--mediumgrey);
     font-size: 11pt;
-    width: 160px;
+    width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -446,11 +478,19 @@ main {
     color: rgb(8, 138, 8);
 }
 
+.saved-info {
+    height: fit-content;
+}
+
 .saved-info p {
     font-size: small;
     color: var(--mediumgrey);
     margin-right: 5px;
-    margin-top: 7px;
+    margin-top: 12px;
+}
+
+ion-icon {
+    opacity: 50%;
 }
 
 .bottom-menu {
@@ -465,4 +505,9 @@ main {
     color: var(--mediumgrey);
     text-decoration: none;
     margin-right: 22px;
+}
+
+.star {
+    margin-left: 5px;
+    font-size: 9pt;
 }
